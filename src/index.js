@@ -26,6 +26,11 @@ const connectToDB = async () => {
 }
 
 
+const listening = (req, res) => {
+    res.send('Working')
+}
+
+
 // Routes 
 app.use('/', movieRouter)
 
